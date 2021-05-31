@@ -1,0 +1,28 @@
+{
+	"name": "server",
+	"version": "1.0.0",
+	"main": "index.js",
+	"license": "MIT",
+	"scripts": {
+		"migrate": " sequelize db:migrate",
+		"dev": "nodemon src/server --exec babel-node -e js",
+		"start": "nodemon src/",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"dependencies": {
+		"apollo-server": "^2.21.1",
+		"bcryptjs": "^2.4.3",
+		"body-parser": "^1.19.0",
+		"diskusage": "^1.1.3",
+		"dotenv": "^8.2.0",
+		"jsonwebtoken": "^8.5.1",
+		"nodemon": "^2.0.7",
+		"sequelize": "^6.5.0",
+		"sqlite3": "^5.0.2"
+	},
+	"devDependencies": {
+		"babel-cli": "^6.26.0",
+		"babel-preset-env": "^1.7.0",
+		"babel-preset-stage-0": "^6.24.1"
+	}
+}
