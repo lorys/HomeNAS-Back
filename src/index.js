@@ -17,7 +17,7 @@ const apiFuncs = {
     users: routes.getUsers,
     home: routes.getHome,
     public: routes.getPublic,
-    upload: routes.uploadFile
+    upload: routes.upload
 };
 
 app.all('*', (req, res) => {
